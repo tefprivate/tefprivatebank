@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>T.E.F. PRIVATE. BANK - Bonifico</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold" href="dashboard.html">TefPrivateBank</a>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
+          <li class="nav-item"><a class="nav-link" href="profilo.html">Profilo</a></li>
+          <li class="nav-item"><a class="nav-link btn btn-danger text-white px-3" href="index.html">Esci</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Contenuto -->
+  <div class="container mt-5">
+    <h2 class="mb-4">Nuovo Bonifico</h2>
+    <form>
+      <div class="mb-3">
+        <label class="form-label">Intestatario</label>
+        <input type="text" class="form-control" value="ADASDA DEUTSCHLAND GMBH" readonly>
+      </div>
+      <div class="mb-3">
+        <label class="form-label">IBAN Mittente</label>
+        <input type="text" class="form-control" value="DE19100701240032683500" readonly>
+      </div>
+      <div class="mb-3">
+        <label class="form-label">BIC / SWIFT</label>
+        <input type="text" class="form-control" value="DEUTDEDB101" readonly>
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Importo (€)</label>
+        <input type="number" class="form-control" placeholder="0.00">
+      </div>
+      <div class="mb-3">
+        <label class="form-label">IBAN Destinatario</label>
+        <input type="text" class="form-control" placeholder="Inserisci IBAN destinatario">
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Causale</label>
+        <textarea class="form-control" rows="2" placeholder="Inserisci causale"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Invia Bonifico</button>
+    </form>
+  </div>
+</body>
+</html>

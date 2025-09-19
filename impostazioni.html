@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>T.E.F. PRIVATE. BANK - Impostazioni</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold" href="dashboard.html">TefPrivateBank</a>
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link btn btn-danger text-white px-3" href="logout.html">Esci</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Contenuto -->
+  <div class="container mt-5">
+    <h1 class="mb-4">Impostazioni di Sicurezza</h1>
+
+    <!-- Cambio password -->
+    <div class="card shadow-sm mb-4">
+      <div class="card-body">
+        <h4 class="card-title">Cambio Password</h4>
+        <form>
+          <div class="mb-3">
+            <label class="form-label">Password attuale</label>
+            <input type="password" class="form-control" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Nuova password</label>
+            <input type="password" class="form-control" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Conferma nuova password</label>
+            <input type="password" class="form-control" required>
+          </div>
+          <button type="submit" class="btn btn-primary">Aggiorna Password</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Autenticazione a due fattori -->
+    <div class="card shadow-sm">
+      <div class="card-body">
+        <h4 class="card-title">Autenticazione a Due Fattori (2FA)</h4>
+        <p>Proteggi ulteriormente il tuo conto abilitando la verifica tramite SMS o App Authenticator.</p>
+        <button class="btn btn-success me-2">Attiva 2FA</button>
+        <button class="btn btn-danger">Disattiva 2FA</button>
+      </div>
+    </div>
+
+    <a href="dashboard.html" class="btn btn-secondary mt-4">⬅ Torna alla Dashboard</a>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

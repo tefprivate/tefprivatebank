@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>T.E.F. PRIVATE. BANK - Admin Panel</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold" href="dashboard.html">TefPrivateBank</a>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
+          <li class="nav-item"><a class="nav-link btn btn-danger text-white px-3" href="index.html">Esci</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Contenuto Admin -->
+  <div class="container mt-5">
+    <h2 class="mb-4 text-danger">Pannello Amministrazione</h2>
+
+    <!-- Dati principali -->
+    <div class="card mb-4 shadow-sm">
+      <div class="card-header bg-primary text-white">Dati Banca</div>
+      <div class="card-body">
+        <ul>
+          <li><strong>Banca:</strong> T.E.F. PRIVATE. BANK</li>
+          <li><strong>Intestatario:</strong> ADASDA DEUTSCHLAND GMBH</li>
+          <li><strong>IBAN:</strong> DE19100701240032683500</li>
+          <li><strong>BIC:</strong> DEUTDEDB101</li>
+          <li><strong>Conto:</strong> 0032683500</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Rappresentanti -->
+    <div class="card mb-4 shadow-sm">
+      <div class="card-header bg-secondary text-white">Rappresentanti Legali</div>
+      <div class="card-body">
+        <ul>
+          <li>👤 CHONG-HYUN KIM — Vice General Manager</li>
+          <li>👤 SHWANA KHDIR ALI — CFO</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Log attività -->
+    <div class="card mb-4 shadow-sm">
+      <div class="card-header bg-dark text-white">Log di Sistema</div>
+      <div class="card-body">
+        <pre style="max-height:200px; overflow-y:auto;">
+[19/09/2025 16:00] Accesso admin riuscito
+[19/09/2025 15:42] Nuovo bonifico elaborato
+[19/09/2025 15:30] Aggiornati dati cliente
+        </pre>
+      </div>
+    </div>
+
+    <a href="dashboard.html" class="btn btn-outline-dark">⬅ Torna alla Dashboard</a>
+  </div>
+</body>
+</html>

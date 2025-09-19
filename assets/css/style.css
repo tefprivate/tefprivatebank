@@ -1,0 +1,163 @@
+/* Reset base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f9f9f9;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #0a1f44; /* blu scuro */
+  color: #fff;
+  padding: 1rem 0;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+}
+
+.navbar .logo img {
+  vertical-align: middle;
+}
+
+.navbar .brand {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #f2a900; /* oro */
+}
+
+.navbar nav a {
+  margin-left: 20px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar nav a:hover {
+  color: #f2a900;
+}
+
+/* Hero */
+.hero {
+  background: url('../img/bank.jpg') center/cover no-repeat;
+  color: #fff;
+  padding: 120px 20px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+}
+
+.hero .btn {
+  background-color: #f2a900;
+  color: #0a1f44;
+  padding: 12px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.hero .btn:hover {
+  background-color: #d98b00;
+  color: #fff;
+}
+
+/* Sezioni */
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+section h2 {
+  font-size: 2rem;
+  color: #0a1f44;
+  margin-bottom: 30px;
+}
+
+.services {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.services .card {
+  width: 220px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.services .card:hover {
+  transform: translateY(-8px);
+}
+
+.services .card i {
+  font-size: 2rem;
+  color: #f2a900;
+  margin-bottom: 15px;
+}
+
+.services .card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #0a1f44;
+}
+
+/* Vantaggi */
+.vantaggi ul {
+  list-style: none;
+  text-align: left;
+  max-width: 600px;
+  margin: auto;
+}
+
+.vantaggi ul li {
+  margin-bottom: 12px;
+  padding-left: 25px;
+  position: relative;
+}
+
+.vantaggi ul li::before {
+  content: "✔";
+  color: #f2a900;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+/* Footer */
+footer {
+  background: #0a1f44;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+footer a {
+  color: #f2a900;
+  text-decoration: none;
+}

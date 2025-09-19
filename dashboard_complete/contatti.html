@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>T.E.F. PRIVATE. BANK - Contatti</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold" href="dashboard.html">TefPrivateBank</a>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
+          <li class="nav-item"><a class="nav-link btn btn-danger text-white px-3" href="index.html">Esci</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Contenuto -->
+  <div class="container mt-5">
+    <h2 class="mb-4">Contatta la tua banca</h2>
+
+    <!-- Informazioni di contatto -->
+    <div class="card mb-4 shadow-sm">
+      <div class="card-body">
+        <p><strong>Banca:</strong> T.E.F. PRIVATE. BANK</p>
+        <p><strong>Indirizzo:</strong> LINDENALLEE 52, 14050 BERLIN, GERMANY</p>
+        <p><strong>Email:</strong> tefprivatebank@gmail.com</p>
+        <p><strong>Registro:</strong> HRB 158077 B CHARLOTTENBURG</p>
+      </div>
+    </div>
+
+    <!-- Form di contatto -->
+    <div class="card shadow-sm">
+      <div class="card-header bg-primary text-white">Invia un Messaggio</div>
+      <div class="card-body">
+        <form>
+          <div class="mb-3">
+            <label class="form-label">Nome</label>
+            <input type="text" class="form-control" placeholder="Il tuo nome" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Email</label>
+            <input type="email" class="form-control" placeholder="la@tuaemail.com" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Messaggio</label>
+            <textarea class="form-control" rows="4" placeholder="Scrivi il messaggio..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Invia</button>
+        </form>
+      </div>
+    </div>
+
+    <a href="dashboard.html" class="btn btn-secondary mt-4">⬅ Torna alla Dashboard</a>
+  </div>
+</body>
+</html>

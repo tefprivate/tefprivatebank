@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>TEF Private Bank - Profilo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold" href="dashboard.html">TEF Private Bank</a>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link btn btn-danger text-white px-3" href="index.html">Esci</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Contenuto -->
+  <div class="container mt-5">
+    <h1 class="mb-4">Profilo Utente</h1>
+    <div class="row">
+      <!-- Dati personali -->
+      <div class="col-md-6">
+        <div class="card shadow-sm mb-4">
+          <div class="card-header bg-primary text-white">Dati Personali</div>
+          <div class="card-body">
+            <form>
+              <div class="mb-3">
+                <label class="form-label">Nome</label>
+                <input type="text" class="form-control" value="Tef Private" readonly>
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Email</label>
+                <input type="email" class="form-control" value="tefprivatebank@gmail.com" readonly>
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Telefono</label>
+                <input type="text" class="form-control" value="+39 333 1234567">
+              </div>
+              <button type="submit" class="btn btn-success">💾 Aggiorna</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cambio password -->
+      <div class="col-md-6">
+        <div class="card shadow-sm mb-4">
+          <div class="card-header bg-warning">Cambio Password</div>
+          <div class="card-body">
+            <form>
+              <div class="mb-3">
+                <label class="form-label">Password attuale</label>
+                <input type="password" class="form-control" required>
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Nuova password</label>
+                <input type="password" class="form-control" required>
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Conferma nuova password</label>
+                <input type="password" class="form-control" required>
+              </div>
+              <button type="submit" class="btn btn-warning">🔒 Cambia Password</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a href="dashboard.html" class="btn btn-secondary">⬅ Torna alla Dashboard</a>
+  </div>
+</body>
+</html>
